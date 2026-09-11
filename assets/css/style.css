@@ -182,24 +182,29 @@ footer {
 .flag-banner {
     overflow: hidden;
     width: 100%;
+    background: #fff;
+    padding: 0.6rem 0;
     margin-bottom: 1rem;
+    border-radius: 4px;
 }
 
 .flag-track {
     display: inline-flex;
+    align-items: center;
     width: max-content;
     animation: flag-scroll 18s linear infinite;
 }
 
 .flag-group {
     display: inline-flex;
+    align-items: center;
 }
 
-.flag {
+.flag-icon {
     display: inline-block;
-    font-size: 1.6rem;
-    line-height: 1;
-    padding: 0 0.4rem;
+    width: 22px;
+    height: 32px;
+    margin: 0 0.5rem;
     animation: flag-wave 1.6s ease-in-out infinite;
     transform-origin: left center;
 }
@@ -216,7 +221,7 @@ footer {
 
 @media (prefers-reduced-motion: reduce) {
     .flag-track,
-    .flag {
+    .flag-icon {
         animation: none;
     }
 }
